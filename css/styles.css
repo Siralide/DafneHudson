@@ -1,0 +1,126 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.main-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/header-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 0;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para tarjetas */
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    border-radius: 10px 10px 0 0 !important;
+}
+
+/* Estilos para informes médicos */
+.medical-report {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 4px solid #343a40;
+}
+
+.report-header {
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.report-section {
+    margin-bottom: 20px;
+}
+
+.report-signature {
+    font-style: italic;
+    text-align: right;
+    margin-top: 30px;
+}
+
+/* Estilos para artículos de periódico */
+.newspaper-article {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.article-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.article-title {
+    font-size: 1.8rem;
+    color: #343a40;
+    margin: 20px 0;
+}
+
+/* Estilos para notas personales */
+.personal-note {
+    background-color: #fff8e1;
+    padding: 20px;
+    border-left: 4px solid #ffc107;
+    font-style: italic;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-header {
+        padding: 60px 0;
+    }
+    
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/* Efectos especiales */
+.highlight {
+    background-color: #fffde7;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+/* Iconos */
+.social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #adb5bd !important;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
